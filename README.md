@@ -2,7 +2,9 @@
 
 This project was part of an assignment for a Machine Learning course. The Vehicle Data is included in the repository and was sourced from Kaggle. 
 
-The included Jupyter Notebook contains the code used to complete the following regression analysis.
+The Jupyter Notebook contains the code used to complete the following regression analysis.
+https://github.com/marrisp/used_cars/blob/main/prompt_II.ipynb
+
 
 # Business Understanding
 The car dataset will be used to gain insights into key drivers for used car prices.
@@ -25,6 +27,8 @@ A price distribution histogram gave a quick overview of the vehicle pricing and 
 # Data Preparation
 
 In addition to outlier cleaning from the data understanding process, converted categorical data into numeric values using the label encoder instead of OneHotEncoder. Once categorical data was enumerated, an additional data type conversion of odometer and year to int64 was completed.
+
+Removed NaN rows, also removed the rows for fuel, transmission, condition having the value as 'other'.
 
 The new, clean data was placed into a new dataframe called "cleansed_copy_df" and inspected for correctness.
 
